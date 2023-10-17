@@ -5,7 +5,7 @@ import 'swiper/swiper-bundle.css';
 
 
 const messages = {
-  en: {
+  'en-US': {
     portalName: 'xxxx Power Plant',
     contact: 'Contact: 13800000000 123@out.com',
     companyInfo: 'Company Information...',
@@ -13,7 +13,7 @@ const messages = {
     aboutUs: 'About Us...',
     contactUs: 'Contact Us...'
   },
-  cn: {
+  'zh-CN': {
     portalName: 'xxxx电厂',
     contact: '联系方式: 13800000000 123@out.com',
     companyInfo: '公司信息...',
@@ -24,7 +24,7 @@ const messages = {
 };
 
 const i18n = createI18n({
-  locale: 'cn',
+  locale: 'zh-CN',
   messages
 });
 

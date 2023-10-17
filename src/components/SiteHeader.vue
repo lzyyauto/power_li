@@ -2,7 +2,7 @@
   <div class="header">
     <div class="portal-name">{{ $t('portalName') }}</div>
     <div class="lang-switch" @click="toggleLang">
-      {{ currentLang === 'cn' ? '🇺🇸' : '🇨🇳' }}
+      {{ currentLang === 'zh-CN' ? '🇺🇸' : '🇨🇳' }}
     </div>
     <div class="contact">{{ $t('contact') }}</div>
   </div>
@@ -17,7 +17,7 @@ export default {
   },
   methods: {
     toggleLang() {
-      this.currentLang = this.currentLang === 'cn' ? 'en' : 'cn';
+      this.currentLang = this.currentLang === 'zh-CN' ? 'en-US' : 'zh-CN';
       this.$i18n.locale = this.currentLang;
     }
   }
