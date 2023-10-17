@@ -2,10 +2,10 @@
   <div id="app">
     <Header />
     <Banner />
-    <InfoSection imageSrc="companyInfoImage" description="$t('companyInfo')" />
-    <InfoSection imageSrc="contactUsImage" description="$t('qualification')" orientation="right" />
-    <InfoSection imageSrc="aboutUsImage" description="$t('aboutUs')" />
-    <InfoSection imageSrc="contactUsImage" description="$t('contactUs')" orientation="right" />
+    <InfoSection :imageSrc="companyInfoImage" description="$t('companyInfo')" />
+    <InfoSection :imageSrc="contactUsImage" description="$t('qualification')" orientation="right" />
+    <InfoSection :imageSrc="aboutUsImage" description="$t('aboutUs')" />
+    <InfoSection :imageSrc="contactUsImage" description="$t('contactUs')" orientation="right" />
     <Footer />
   </div>
 </template>
