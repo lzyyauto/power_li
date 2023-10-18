@@ -58,20 +58,21 @@ export default {
 }
 
 .section-title {
-  top: -50px;  /* 调整为所需的位置 */
-  left: 50px;
   display: flex;
   align-items: center;
+  padding-top: 20px;
+  padding-left: 50px;
 }
 
 .title-line {
   width: 5px;
-  height: 30px;
-  background-color: deepskyblue; /* 深蓝色 */
+  height: 40px;
+  background-color: #001f3f; /* 深蓝色 */
   margin-right: 10px;
 }
 
 .title-text {
   font-weight: bold;
+  font-size: larger;
 }
 </style>
