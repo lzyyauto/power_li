@@ -3,17 +3,29 @@
     <Header @scrollTo="handleScrollTo" />
     <Banner />
   <InfoSection 
-    ref="business"
+    ref="technology"
     :imageSrc="businessPlantImage"  
+    titleKey="technologyTitle"
+    descriptionKey="technologyDescription" 
+    orientation="left" />
+  <InfoSection 
+    ref="business"
+    :imageSrc="powerPlantImage" 
     titleKey="businessTitle"
     descriptionKey="businessDescription" 
+    orientation="right" />
+  <InfoSection 
+    ref="cilent"
+    :imageSrc="businessPlantImage"  
+    titleKey="clientTitle"
+    descriptionKey="clientDescription" 
     orientation="left" />
   <InfoSection 
     ref="company"
     :imageSrc="powerPlantImage" 
     titleKey="companyTitle"
     descriptionKey="companyDescription" 
-    orientation="right" />
+    orientation="left" />
     <Footer />
   </div>
 </template>
