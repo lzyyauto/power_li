@@ -41,7 +41,7 @@ export default {
 .banner-image {
   width: 100%;
   object-fit: cover;
-  max-height: 700px;
+  max-height: 500px;
   display: block;
 }
 </style>

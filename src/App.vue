@@ -1,11 +1,19 @@
 <template>
   <div id="app">
-    <Header />
+    <Header @scrollTo="handleScrollTo" />
     <Banner />
-    <InfoSection :imageSrc="companyInfoImage" description="$t('companyInfo')" />
-    <InfoSection :imageSrc="contactUsImage" description="$t('qualification')" orientation="right" />
-    <InfoSection :imageSrc="aboutUsImage" description="$t('aboutUs')" />
-    <InfoSection :imageSrc="contactUsImage" description="$t('contactUs')" orientation="right" />
+  <InfoSection 
+    ref="business"
+    :imageSrc="businessPlantImage"  
+    titleKey="businessTitle"
+    descriptionKey="businessDescription" 
+    orientation="left" />
+  <InfoSection 
+    ref="company"
+    :imageSrc="powerPlantImage" 
+    titleKey="companyTitle"
+    descriptionKey="companyDescription" 
+    orientation="right" />
     <Footer />
   </div>
 </template>
@@ -19,10 +27,22 @@ import Footer from '@/components/SiteFooter.vue';
 export default {
   data() {
     return {
-      companyInfoImage: require('@/assets/banner.jpg'),
-      aboutUsImage: require('@/assets/273.jpeg'),
-      contactUsImage: require('@/assets/Power_Plant.jpg')
+      powerPlantImage: require('@/assets/Power_Plant.jpg'),
+      businessPlantImage: require('@/assets/273.jpeg')
     };
+  },
+
+  methods: {
+      handleScrollTo(sectionId) {
+        if (sectionId === 'contactSection') {
+          window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        } else {
+          const section = this.$refs[sectionId];
+          if (section) {
+            section.$el.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      },
   },
 
   components: {
