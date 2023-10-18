@@ -33,16 +33,16 @@ export default {
   },
 
   methods: {
-      handleScrollTo(sectionId) {
-        if (sectionId === 'contactSection') {
-          window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-        } else {
-          const section = this.$refs[sectionId];
-          if (section) {
-            section.$el.scrollIntoView({ behavior: 'smooth' });
-          }
+    handleScrollTo(sectionId) {
+      if (sectionId === 'contactSection') {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+      } else {
+        const section = this.$refs[sectionId];
+        if (section && section.$refs.sectionRoot) {
+          section.$refs.sectionRoot.scrollIntoView({ behavior: 'smooth' });
         }
-      },
+      }
+    }
   },
 
   components: {

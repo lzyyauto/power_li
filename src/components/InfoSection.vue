@@ -1,5 +1,5 @@
 <template>
-  <div class="section-title">
+  <div ref="sectionRoot" class="section-title">
     <div class="title-line"></div>
     <div class="title-text">{{ $t(titleKey) }}</div>
   </div>
