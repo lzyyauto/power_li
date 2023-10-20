@@ -1,7 +1,7 @@
 <template>
   <div class="header-container">
     <div class="logo">
-      <img src="@/assets/logo.png" alt="Company Logo" />
+      <img src="@/assets/pic1.png" alt="四川达州燃气发电厂" />
     </div>
     <div class="nav-items">
       <div @click="$emit('scrollTo', 'aboutUs')" class="nav-item">{{ $t('aboutUsTitle') }}</div>
