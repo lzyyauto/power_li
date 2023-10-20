@@ -4,11 +4,11 @@
       <img src="@/assets/logo.png" alt="Company Logo" />
     </div>
     <div class="nav-items">
-      <div @click="$emit('scrollTo', 'technology')" class="nav-item">{{ $t('technologyTitle') }}</div>
-      <div @click="$emit('scrollTo', 'business')" class="nav-item">{{ $t('businessTitle') }}</div>
-      <div @click="$emit('scrollTo', 'cilent')" class="nav-item">{{ $t('clientTitle') }}</div>
-      <div @click="$emit('scrollTo', 'company')" class="nav-item">{{ $t('companyTitle') }}</div>
-      <div @click="$emit('scrollTo', 'contactSection')" class="nav-item">{{ $t('contact') }}</div>
+      <div @click="$emit('scrollTo', 'aboutUs')" class="nav-item">{{ $t('aboutUsTitle') }}</div>
+      <div @click="$emit('scrollTo', 'vision')" class="nav-item">{{ $t('visionTitle') }}</div>
+      <div @click="$emit('scrollTo', 'mission')" class="nav-item">{{ $t('missionTitle') }}</div>
+      <div @click="$emit('scrollTo', 'core')" class="nav-item">{{ $t('coreTitle') }}</div>
+      <div @click="$emit('scrollTo', 'contactSection')" class="nav-item">{{ $t('contactTitle') }}</div>
     </div>
     <div class="lang-switch" @click="toggleLang">
       {{ currentLang === 'zh-CN' ? '🇨🇳' : '🇺🇸' }}

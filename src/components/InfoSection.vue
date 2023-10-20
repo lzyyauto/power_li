@@ -54,7 +54,8 @@ export default {
 .info-section .text {
   flex: 1.5; /* 调整文字部分宽度，增加它的重要性 */
   padding: 20px;
-  text-align: center; /* 让文字居中 */
+  text-align: right; /* 将文本对齐方式改为居左 */
+  white-space: pre-line;
 }
 
 .section-title {

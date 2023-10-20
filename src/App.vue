@@ -3,28 +3,28 @@
     <Header @scrollTo="handleScrollTo" />
     <Banner />
   <InfoSection 
-    ref="technology"
+    ref="aboutUs"
     :imageSrc="businessPlantImage"  
-    titleKey="technologyTitle"
-    descriptionKey="technologyDescription" 
+    titleKey="aboutUsTitle"
+    descriptionKey="aboutUsDescription" 
     orientation="left" />
   <InfoSection 
-    ref="business"
+    ref="vision"
     :imageSrc="powerPlantImage" 
-    titleKey="businessTitle"
-    descriptionKey="businessDescription" 
+    titleKey="visionTitle"
+    descriptionKey="visionDescription" 
     orientation="right" />
   <InfoSection 
-    ref="cilent"
+    ref="mission"
     :imageSrc="businessPlantImage"  
-    titleKey="clientTitle"
-    descriptionKey="clientDescription" 
+    titleKey="missionTitle"
+    descriptionKey="missionDescription" 
     orientation="left" />
   <InfoSection 
-    ref="company"
+    ref="core"
     :imageSrc="powerPlantImage" 
-    titleKey="companyTitle"
-    descriptionKey="companyDescription" 
+    titleKey="coreTitle"
+    descriptionKey="coreDescription" 
     orientation="left" />
     <Footer />
   </div>
