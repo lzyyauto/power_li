@@ -16,13 +16,13 @@
     orientation="right" />
   <InfoSection 
     ref="mission"
-    :imageSrc="businessPlantImage"  
+    :imageSrc="aboutUsImage"  
     titleKey="missionTitle"
     descriptionKey="missionDescription" 
     orientation="left" />
   <InfoSection 
     ref="core"
-    :imageSrc="powerPlantImage" 
+    :imageSrc="visionImage" 
     titleKey="coreTitle"
     descriptionKey="coreDescription" 
     orientation="left" />
