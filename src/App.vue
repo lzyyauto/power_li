@@ -4,13 +4,13 @@
     <Banner />
   <InfoSection 
     ref="aboutUs"
-    :imageSrc="businessPlantImage"  
+    :imageSrc="aboutUsImage"  
     titleKey="aboutUsTitle"
     descriptionKey="aboutUsDescription" 
     orientation="left" />
   <InfoSection 
     ref="vision"
-    :imageSrc="powerPlantImage" 
+    :imageSrc="visionImage" 
     titleKey="visionTitle"
     descriptionKey="visionDescription" 
     orientation="right" />
@@ -40,7 +40,9 @@ export default {
   data() {
     return {
       powerPlantImage: require('@/assets/Power_Plant.jpg'),
-      businessPlantImage: require('@/assets/273.jpeg')
+      businessPlantImage: require('@/assets/273.jpeg'),
+      visionImage: require('@/assets/3f2af7e7bbf05f0e5c74cb1289b6c2c7.jpg'),
+      aboutUsImage: require('@/assets/00e3ee5d8e03bf800b5211b01e229a40.jpg')
     };
   },
 
