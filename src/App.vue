@@ -4,25 +4,25 @@
     <Banner />
   <InfoSection 
     ref="aboutUs"
-    :imageSrc="aboutUsImage"  
+    :imageSrc="lastImage"  
     titleKey="aboutUsTitle"
     descriptionKey="aboutUsDescription" 
     orientation="left" />
   <InfoSection 
     ref="vision"
-    :imageSrc="visionImage" 
+    :imageSrc="lastImage" 
     titleKey="visionTitle"
     descriptionKey="visionDescription" 
     orientation="right" />
   <InfoSection 
     ref="mission"
-    :imageSrc="aboutUsImage"  
+    :imageSrc="lastImage"  
     titleKey="missionTitle"
     descriptionKey="missionDescription" 
     orientation="left" />
   <InfoSection 
     ref="core"
-    :imageSrc="visionImage" 
+    :imageSrc="lastImage" 
     titleKey="coreTitle"
     descriptionKey="coreDescription" 
     orientation="left" />
@@ -42,7 +42,8 @@ export default {
       powerPlantImage: require('@/assets/Power_Plant.jpg'),
       businessPlantImage: require('@/assets/273.jpeg'),
       visionImage: require('@/assets/3f2af7e7bbf05f0e5c74cb1289b6c2c7.jpg'),
-      aboutUsImage: require('@/assets/00e3ee5d8e03bf800b5211b01e229a40.jpg')
+      aboutUsImage: require('@/assets/00e3ee5d8e03bf800b5211b01e229a40.jpg'),
+      lastImage: require('@/assets/WechatIMG123.jpeg')
     };
   },
 
