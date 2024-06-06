@@ -37,6 +37,9 @@ import InfoSection from '@/components/InfoSection.vue';
 import Footer from '@/components/SiteFooter.vue';
 
 export default {
+  mounted() {
+    this.addAlternateLink();
+  },
   data() {
     return {
       powerPlantImage: require('@/assets/Power_Plant.jpg'),
@@ -57,7 +60,15 @@ export default {
           section.$refs.sectionRoot.scrollIntoView({ behavior: 'smooth' });
         }
       }
-    }
+    },
+      addAlternateLink() {
+        const linkEn = document.createElement('link');
+        linkEn.rel = 'alternate';
+        linkEn.href = 'https://www.ccpplab.com/';
+        linkEn.hreflang = 'en-US';
+        
+        document.head.appendChild(linkEn);
+      }
   },
 
   components: {

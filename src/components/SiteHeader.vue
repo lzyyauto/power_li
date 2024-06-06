@@ -1,7 +1,7 @@
 <template>
   <div class="header-container">
     <div class="logo">
-      <img src="@/assets/pic1.png" alt="四川达州燃气发电厂" />
+      <img src="@/assets/pic1.png" alt="SICHUAN DAZHOU GAS-FIRED POWER PLANT" />
     </div>
     <div class="nav-items">
       <div @click="$emit('scrollTo', 'aboutUs')" class="nav-item">{{ $t('aboutUsTitle') }}</div>
@@ -22,7 +22,7 @@
 export default {
   data() {
     return {
-      currentLang: 'zh-CN'
+      currentLang: 'en-US'
     };
   },
   methods: {
