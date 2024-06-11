@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://www.ccpplab.com",
+      "permanent": true
+    }
+  ]
+}
