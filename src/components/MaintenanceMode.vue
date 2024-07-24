@@ -13,7 +13,7 @@
   export default {
     data() {
       return {
-        isMaintenanceMode: process.env.VUE_APP_MAINTENANCE_MODE === 'true'
+        isMaintenanceMode: true
       };
     }
   };

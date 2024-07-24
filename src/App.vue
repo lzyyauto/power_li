@@ -46,7 +46,7 @@ export default {
   },
   data() {
     return {
-      isMaintenanceMode: process.env.VUE_APP_MAINTENANCE_MODE === 'true', // 维护模式状态
+      isMaintenanceMode: true, // 维护模式状态
       powerPlantImage: require('@/assets/Power_Plant.jpg'),
       businessPlantImage: require('@/assets/273.jpeg'),
       visionImage: require('@/assets/3f2af7e7bbf05f0e5c74cb1289b6c2c7.jpg'),
