@@ -13,7 +13,7 @@
   export default {
     data() {
       return {
-        isMaintenanceMode: true
+        isMaintenanceMode: false
       };
     }
   };
